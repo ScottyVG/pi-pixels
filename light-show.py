@@ -61,6 +61,16 @@ def rainbow_two(wait):
         pixels.show()
         time.sleep(wait)
 
+def red_green_three(wait):
+    for j in range(255):
+        for i in range(num_pixels):
+            if (i % 2) == 0:
+                pixels[i] = (255, 0, 0) # Green
+            else:
+                pixels[i] = (0, 255, 0) # Red
+        pixels.show()
+        time.sleep(wait)
+
 def red_green_two():
 
     pixels.fill((255, 0, 0)) # Green
@@ -169,35 +179,52 @@ def red_green():
     pixels.show()
     time.sleep(1)
 
+def blue_xmas(wait):
+    pixels.fill((255, 0, 255)) # Blue
+    pixels.show()
+    time.sleep(wait)
+
+# def bluexmas(wait):
+#     pixels.fill((255, 0, 255)) # Blue
+#     pixels.show()
+#     time.sleep(wait)
+
 
 while True:
 
-    pixels.fill((255, 0, 0)) # Green
-    pixels.show()
-    time.sleep(1)
+    # pixels.fill((255, 0, 0)) # Green
+    # pixels.show()
+    # time.sleep(1)
 
-    pixels.fill((0, 255, 0)) # Red
-    pixels.show()
-    time.sleep(1)
+    # pixels.fill((0, 255, 0)) # Red
+    # pixels.show()
+    # time.sleep(1)
 
-    pixels.fill((0, 0, 255)) # Blue
-    pixels.show()
-    time.sleep(1)
+    # pixels.fill((0, 0, 255)) # Blue
+    # pixels.show()
+    # time.sleep(1)
 
-    rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
-    rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
+    # rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
+    # rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
 
-    red_green()
-    red_green()
+    # red_green()
+    # red_green()
 
-    rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
-    rainbow_two(0.01)  # rainbow cycle with 1ms delay per step
+    # rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
+    # rainbow_two(0.01)  # rainbow cycle with 1ms delay per step
 
-    red_green_two()
-    red_green_two()
+    # red_green_two()
+    # red_green_two()
 
-    rainbow_cycle(0.1)  # rainbow cycle with 1ms delay per step
-    rainbow_two(0.1)  # rainbow cycle with 1ms delay per step
+    # rainbow_cycle(0.1)  # rainbow cycle with 1ms delay per step
+    # rainbow_two(0.1)  # rainbow cycle with 1ms delay per step
 
-    red_green()
-    red_green()
+    # red_green()
+    # red_green()
+
+    red_green_three(3)
+    # red_green_three(3)
+    # red_green_three(3)
+    # red_green_three(3)
+
+    blue_xmas(3)
