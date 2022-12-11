@@ -50,6 +50,27 @@ def rainbow_cycle(wait):
         pixels.show()
         time.sleep(wait)
 
+def rainbow_two(wait):
+    for j in range(255):
+        for i in range(num_pixels):
+            pixel_index = (i * 256 // num_pixels) + j
+            if (i % 2) == 0:
+                pixels[i] = wheel(pixel_index & 127)
+            else:
+                pixels[i] = wheel(pixel_index & 255)
+        pixels.show()
+        time.sleep(wait)
+
+def red_green_two():
+
+    pixels.fill((255, 0, 0)) # Green
+    pixels.show()
+    time.sleep(2)
+
+    pixels.fill((0, 255, 0)) # Red
+    pixels.show()
+    time.sleep(2)
+
 def red_green():
 
     # ho ho hoo
@@ -164,7 +185,19 @@ while True:
     time.sleep(1)
 
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
+    rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
 
     red_green()
     red_green()
 
+    rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
+    rainbow_two(0.01)  # rainbow cycle with 1ms delay per step
+
+    red_green_two()
+    red_green_two()
+
+    rainbow_cycle(0.1)  # rainbow cycle with 1ms delay per step
+    rainbow_two(0.1)  # rainbow cycle with 1ms delay per step
+
+    red_green()
+    red_green()
