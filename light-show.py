@@ -192,39 +192,36 @@ def blue_xmas(wait):
 
 while True:
 
-    # pixels.fill((255, 0, 0)) # Green
-    # pixels.show()
-    # time.sleep(1)
+    pixels.fill((255, 0, 0)) # Green
+    pixels.show()
+    time.sleep(3)
 
-    # pixels.fill((0, 255, 0)) # Red
-    # pixels.show()
-    # time.sleep(1)
+    pixels.fill((0, 255, 0)) # Red
+    pixels.show()
+    time.sleep(3)
 
-    # pixels.fill((0, 0, 255)) # Blue
-    # pixels.show()
-    # time.sleep(1)
+    pixels.fill((0, 0, 255)) # Blue
+    pixels.show()
+    time.sleep(3)
 
-    # rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
-    # rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
+    rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
 
-    # red_green()
-    # red_green()
+    red_green()
+    rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
+    red_green_two()
 
-    # rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
-    # rainbow_two(0.01)  # rainbow cycle with 1ms delay per step
 
-    # red_green_two()
-    # red_green_two()
+    red_green_two()
+    rainbow_two(0.01)  # rainbow cycle with 1ms delay per step
+    red_green()
 
-    # rainbow_cycle(0.1)  # rainbow cycle with 1ms delay per step
-    # rainbow_two(0.1)  # rainbow cycle with 1ms delay per step
+    rainbow_cycle(0.1)  # rainbow cycle with 1ms delay per step
+    rainbow_two(0.1)  # rainbow cycle with 1ms delay per step
 
-    # red_green()
-    # red_green()
+    red_green()
+    rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
+    red_green()
 
-    red_green_three(3)
-    # red_green_three(3)
-    # red_green_three(3)
     # red_green_three(3)
 
-    blue_xmas(3)
+    blue_xmas(10)
