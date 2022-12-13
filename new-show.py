@@ -79,7 +79,7 @@ while True:
 
     rainbow_cycle(0.001)
 
-        for color in colors:
+    for color in colors:
         pixels.color = color
         # colour top LED white (will flash due to loop)
         pixels[TOP_LED].color = (1, 1, 1)
