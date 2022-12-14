@@ -2,12 +2,6 @@
 import time
 import board
 import neopixel
-from colorzero import Color
-from time import sleep
-
-# generate random floating point values
-from random import seed
-from random import random
 
 
 # Choose an open pin connected to the Data In of the NeoPixel strip, i.e. board.D18
@@ -22,7 +16,7 @@ num_pixels = 450
 ORDER = neopixel.GRB
 
 pixels = neopixel.NeoPixel(
-    pixel_pin, num_pixels, brightness=.5, auto_write=False, pixel_order=ORDER
+    pixel_pin, num_pixels, brightness=0.3, auto_write=False, pixel_order=ORDER
 )
 
 
@@ -56,50 +50,27 @@ def rainbow_cycle(wait):
         pixels.show()
         time.sleep(wait)
 
-# seed random number generator
-seed(1)
-
-# Set to LED number for top of Xmas Tree. LEDs are numbered 0-24.
-TOP_LED = 3
-
-
-colors = [Color('cyan'), Color('yellow'), Color('purple'), Color('red'), Color('green'),
-  Color('blue'), Color('magenta')] # add more if you like, see https://www.rapidtables.com/web/color/RGB_Color.html#color-table.
-
-# main loop
 
 while True:
-    # colors
-    for color in colors:
-        pixels.color = color
-        # colour top LED white (will flash due to loop)
-        pixels[TOP_LED].color = (1, 1, 1)
-        val = random()/10 # trying to make it 'sparkle'
-        sleep(val)
+    pixels.fill((255, 255, 255))
+    pixels.show()
+    time.sleep(10)
 
-    rainbow_cycle(0.001)
+    pixels.fill((0, 0, 0))
+    pixels.show()
 
-    for color in colors:
-        pixels.color = color
-        # colour top LED white (will flash due to loop)
-        pixels[TOP_LED].color = (1, 1, 1)
-        val = random()/10 # trying to make it 'sparkle'
-        sleep(val)
+    for i in range(450):
+        pixels[i-5] = (0, 0, 0)
+        pixels[i-4] = (0, 0, 0)
+        pixels[i-3] = (0, 0, 0)
+        pixels[i-2] = (0, 0, 0)
+        pixels[i-1] = (0, 0, 0)
+        pixels[i] = (255, 255, 255)
+        pixels[i+1] = (255, 255, 255)
+        pixels[i+2] = (255, 255, 255)
+        pixels[i+3] = (255, 255, 255)
+        pixels[i+4] = (255, 255, 255)
+        pixels[i+5] = (255, 255, 255)
+        time.sleep(0.1)
 
-    rainbow_cycle(0.001)
 
-    for color in colors:
-        pixels.color = color
-        # colour top LED white (will flash due to loop)
-        pixels[TOP_LED].color = (1, 1, 1)
-        val = random()/10 # trying to make it 'sparkle'
-        sleep(val)
-
-    rainbow_cycle(0.001)
-
-    for color in colors:
-        pixels.color = color
-        # colour top LED white (will flash due to loop)
-        pixels[TOP_LED].color = (1, 1, 1)
-        val = random()/10 # trying to make it 'sparkle'
-        sleep(val)

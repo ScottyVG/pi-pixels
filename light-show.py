@@ -16,7 +16,7 @@ num_pixels = 450
 ORDER = neopixel.GRB
 
 pixels = neopixel.NeoPixel(
-    pixel_pin, num_pixels, brightness=0.2, auto_write=False, pixel_order=ORDER
+    pixel_pin, num_pixels, brightness=0.3, auto_write=False, pixel_order=ORDER
 )
 
 
@@ -184,10 +184,10 @@ def blue_xmas(wait):
     pixels.show()
     time.sleep(wait)
 
-# def bluexmas(wait):
-#     pixels.fill((255, 0, 255)) # Blue
-#     pixels.show()
-#     time.sleep(wait)
+def bluexmas(wait):
+    pixels.fill((255, 0, 255)) # Blue
+    pixels.show()
+    time.sleep(wait)
 
 
 while True:
