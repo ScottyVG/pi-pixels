@@ -19,6 +19,28 @@ pixels = neopixel.NeoPixel(
     pixel_pin, num_pixels, brightness=0.3, auto_write=False, pixel_order=ORDER
 )
 
+# colors
+white = (255, 255, 255)
+off = (0, 0, 0)
+grey = (128, 128, 128)
+magenta = (255, 0, 127)
+pink = (255, 0, 255)
+violett = (127, 0, 255)
+blue = (0, 0, 255)
+light_blue = (0, 127, 255)
+cyan = (0, 255, 255)
+blue_green = (0, 255, 127)
+green = (0, 255, 0)
+yellow_green = (127, 255, 0)
+yellow = (255, 255, 0)
+orange = (255, 127, 0)
+brown = (127, 63, 0)
+orange_red = (255, 63, 0)
+red_orange = (255, 127, 0)
+red_pink = (255, 0, 127)
+red = (255, 0, 0)
+
+
 
 def wheel(pos):
     # Input a value 0 to 255 to get a color value.
@@ -195,71 +217,212 @@ def fill(color, wait):
 
 
 while True:
+    fill(white, 1)
+    fill(off, .1)
+    fill(grey, 1)
+    fill(off, .1)
+    fill(magenta, 1)
+    fill(off, .1)
+    fill(pink, 1)
+    fill(off, .1)
+    fill(violett, 1)
+    fill(off, .1)
+    fill(blue, 1)
+    fill(off, .1)
+    fill(light_blue, 1)
+    fill(off, .1)
+    fill(cyan, 1)
+    fill(off, .1)
+    fill(blue_green, 1)
+    fill(off, .1)
+    fill(green, 1)
+    fill(off, .1)
+    fill(yellow_green, 1)
+    fill(off, .1)
+    fill(yellow, 1)
+    fill(off, .1)
+    fill(orange, 1)
+    fill(off, .1)
+    fill(brown, 1)
+    fill(off, .1)
+    fill(orange_red, 1)
+    fill(off, .1)
+    fill(red_orange, 1)
+    fill(off, .1)
+    fill(red_pink, 1)
+    fill(off, .1)
+    fill(red, 1)
+    fill(off, .1)
 
-    fill((255, 0, 0), 3) # Green
-    fill((0, 0, 0), 1) # Off
-    fill((0, 255, 0), 3) # Red
-    fill((0, 0, 0), 1) # Off
-    # fill((0, 0, 255), 3) # Blue
-    # fill((0, 0, 0), 1) # Off
+    fill(white, .5)
+    fill(off, .1)
+    fill(grey, .5)
+    fill(off, .1)
+    fill(magenta, .5)
+    fill(off, .1)
+    fill(pink, .5)
+    fill(off, .1)
+    fill(violett, .5)
+    fill(off, .1)
+    fill(blue, .5)
+    fill(off, .1)
+    fill(light_blue, .5)
+    fill(off, .1)
+    fill(cyan, .5)
+    fill(off, .1)
+    fill(blue_green, .5)
+    fill(off, .1)
+    fill(green, .5)
+    fill(off, .1)
+    fill(yellow_green, .5)
+    fill(off, .1)
+    fill(yellow, .5)
+    fill(off, .1)
+    fill(orange, .5)
+    fill(off, .1)
+    fill(brown, .5)
+    fill(off, .1)
+    fill(orange_red, .5)
+    fill(off, .1)
+    fill(red_orange, .5)
+    fill(off, .1)
+    fill(red_pink, .5)
+    fill(off, .1)
+    fill(red, .5)
+    fill(off, .1)
 
-    fill((255, 0, 0), 2) # Green
-    fill((0, 0, 0), .5) # Off
-    fill((0, 255, 0), 2) # Red
-    fill((0, 0, 0), .5) # Off
-    # fill((0, 0, 255), 2) # Blue
-    # fill((0, 0, 0), .5) # Off
+    fill(white, .25)
+    fill(off, .1)
+    fill(grey, .25)
+    fill(off, .1)
+    fill(magenta, .25)
+    fill(off, .1)
+    fill(pink, .25)
+    fill(off, .1)
+    fill(violett, .25)
+    fill(off, .1)
+    fill(blue, .25)
+    fill(off, .1)
+    fill(light_blue, .25)
+    fill(off, .1)
+    fill(cyan, .25)
+    fill(off, .1)
+    fill(blue_green, .25)
+    fill(off, .1)
+    fill(green, .25)
+    fill(off, .1)
+    fill(yellow_green, .25)
+    fill(off, .1)
+    fill(yellow, .25)
+    fill(off, .1)
+    fill(orange, .25)
+    fill(off, .1)
+    fill(brown, .25)
+    fill(off, .1)
+    fill(orange_red, .25)
+    fill(off, .1)
+    fill(red_orange, .25)
+    fill(off, .1)
+    fill(red_pink, .25)
+    fill(off, .1)
+    fill(red, .25)
+    fill(off, .1)
 
-    fill((255, 0, 0), 1) # Green
-    fill((0, 0, 0), .25) # Off
-    fill((0, 255, 0), 1) # Red
-    fill((0, 0, 0), .25) # Off
-    # fill((0, 0, 255), 1) # Blue
-    # fill((0, 0, 0), .25) # Off
+    fill(white, .1)
+    fill(off, .01)
+    fill(grey, .1)
+    fill(off, .01)
+    fill(magenta, .1)
+    fill(off, .01)
+    fill(pink, .1)
+    fill(off, .01)
+    fill(violett, .1)
+    fill(off, .01)
+    fill(blue, .1)
+    fill(off, .01)
+    fill(light_blue, .1)
+    fill(off, .01)
+    fill(cyan, .1)
+    fill(off, .01)
+    fill(blue_green, .1)
+    fill(off, .01)
+    fill(green, .1)
+    fill(off, .01)
+    fill(yellow_green, .1)
+    fill(off, .01)
+    fill(yellow, .1)
+    fill(off, .01)
+    fill(orange, .1)
+    fill(off, .01)
+    fill(brown, .1)
+    fill(off, .01)
+    fill(orange_red, .1)
+    fill(off, .01)
+    fill(red_orange, .1)
+    fill(off, .01)
+    fill(red_pink, .1)
+    fill(off, .01)
+    fill(red, .1)
+    fill(off, .01)
 
-    fill((255, 0, 0), .5) # Green
-    fill((0, 0, 0), .125) # Off
-    fill((0, 255, 0), .5) # Red
-    fill((0, 0, 0), .125) # Off
-    # fill((0, 0, 255), .5) # Blue
-    # fill((0, 0, 0), .125) # Off
+    red_green_three(.0001)
+    fill(off, .0001) # Off
+    red_green_three_reverse(.0001)
+    fill(off, .0001) # Off
+    red_green_three(.0001)
+    fill(off, .0001) # Off
+    red_green_three_reverse(.0001)
+    fill(off, .0001) # Off
 
-    fill((255, 0, 0), .5) # Green
-    fill((0, 0, 0), .125) # Off
-    fill((0, 255, 0), .5) # Red
-    fill((0, 0, 0), .125) # Off
-    # fill((0, 0, 255), .5) # Blue
-    # fill((0, 0, 0), .125) # Off
 
-    fill((255, 0, 0), .5) # Green
-    fill((0, 0, 0), .125) # Off
-    fill((0, 255, 0), .5) # Red
-    fill((0, 0, 0), .125) # Off
-    # fill((0, 0, 255), .5) # Blue
-    # fill((0, 0, 0), .125) # Off
+    fill(green, 3) # Green
+    fill(off, 1) # Off
+    fill(red, 3) # Red
+    fill(off, 1) # Off
 
-    fill((255, 0, 0), .5) # Green
-    fill((0, 0, 0), .125) # Off
-    fill((0, 255, 0), .5) # Red
-    fill((0, 0, 0), .125) # Off
-    # fill((0, 0, 255), .5) # Blue
-    # fill((0, 0, 0), .125) # Off
+    fill(green, 2) # Green
+    fill(off, .5) # Off
+    fill(red, 2) # Red
+    fill(off, .5) # Off
 
-    fill((255, 0, 0), .5) # Green
-    fill((0, 0, 0), .125) # Off
-    fill((0, 255, 0), .5) # Red
-    fill((0, 0, 0), .125) # Off
-    # fill((0, 0, 255), .5) # Blue
-    # fill((0, 0, 0), .125) # Off
+    fill(green, 1) # Green
+    fill(off, .25) # Off
+    fill(red, 1) # Red
+    fill(off, .25) # Off
+
+    fill(green, .5) # Green
+    fill(off, .125) # Off
+    fill(red, .5) # Red
+    fill(off, .125) # Off
+
+    fill(green, .5) # Green
+    fill(off, .125) # Off
+    fill(red, .5) # Red
+    fill(off, .125) # Off
+
+    fill(green, .5) # Green
+    fill(off, .125) # Off
+    fill(red, .5) # Red
+    fill(off, .125) # Off
+
+    fill(green, .5) # Green
+    fill(off, .125) # Off
+    fill(red, .5) # Red
+    fill(off, .125) # Off
+
+    fill(green, .5) # Green
+    fill(off, .125) # Off
+    fill(red, .5) # Red
+    fill(off, .125) # Off
 
     red_green_three(.001)
-    fill((0, 0, 0), .01) # Off
+    fill(off, .01) # Off
     red_green_three_reverse(.001)
-    fill((0, 0, 0), .01) # Off
+    fill(off, .01) # Off
     red_green_three(.001)
-    fill((0, 0, 0), .01) # Off
+    fill(off, .01) # Off
     red_green_three_reverse(.001)
-    fill((0, 0, 0), .01) # Off
+    fill(off, .01) # Off
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
 
     red_green()
@@ -278,16 +441,5 @@ while True:
     rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
     red_green()
 
-    fill((0, 0, 255), 5) # Blue
-    fill((0, 0, 0), 2) # Off
-
-    red_green_three(.0001)
-    fill((0, 0, 0), .0001) # Off
-    red_green_three_reverse(.0001)
-    fill((0, 0, 0), .0001) # Off
-    red_green_three(.0001)
-    fill((0, 0, 0), .0001) # Off
-    red_green_three_reverse(.0001)
-    fill((0, 0, 0), .0001) # Off
-
-    fill((0, 0, 0), 5) # Off
+    fill(blue, 15) # Blue
+    fill(off, 2) # Off
