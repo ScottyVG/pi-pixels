@@ -289,7 +289,7 @@ while True:
     fill(off, .01) # Off
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
     fill(off, .01) # Off
-    fill_random_show(.01)
+    fill_random_show(.001)
     red_green_two()
     fill(off, .01) # Off
     fill_random_show(.001)
