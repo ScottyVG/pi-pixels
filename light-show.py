@@ -70,6 +70,16 @@ def red_green_three(wait):
         pixels.show()
         time.sleep(wait)
 
+def red_green_three_reverse(wait):
+    for i in range(num_pixels):
+        j = num_pixels - i
+        if (j % 2) == 0:
+            pixels[j] = (255, 0, 0) # Green
+        else:
+            pixels[j] = (0, 255, 0) # Red
+        pixels.show()
+        time.sleep(wait)
+
 def red_green_two():
 
     pixels.fill((255, 0, 0)) # Green
@@ -244,9 +254,11 @@ while True:
 
     red_green_three(.001)
     fill((0, 0, 0), .01) # Off
-    red_green_three(.001)
+    red_green_three_reverse(.001)
     fill((0, 0, 0), .01) # Off
     red_green_three(.001)
+    fill((0, 0, 0), .01) # Off
+    red_green_three_reverse(.001)
     fill((0, 0, 0), .01) # Off
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
 
@@ -266,16 +278,16 @@ while True:
     rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
     red_green()
 
-    red_green_three(.1)
-
     fill((0, 0, 255), 5) # Blue
     fill((0, 0, 0), 2) # Off
 
-    red_green_three(.01)
-    fill((0, 0, 0), .01) # Off
-    red_green_three(.01)
-    fill((0, 0, 0), .01) # Off
-    red_green_three(.01)
-    fill((0, 0, 0), .01) # Off
+    red_green_three(.0001)
+    fill((0, 0, 0), .0001) # Off
+    red_green_three_reverse(.0001)
+    fill((0, 0, 0), .0001) # Off
+    red_green_three(.0001)
+    fill((0, 0, 0), .0001) # Off
+    red_green_three_reverse(.0001)
+    fill((0, 0, 0), .0001) # Off
 
     fill((0, 0, 0), 5) # Off
