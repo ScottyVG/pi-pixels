@@ -414,21 +414,21 @@ while True:
     fill(off, .01) # Off
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
 
-    red_green()
+    # red_green()
     rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
     red_green_two()
 
 
-    red_green_two()
+    # red_green_two()
     rainbow_two(0.01)  # rainbow cycle with 1ms delay per step
-    red_green()
+    # red_green()
 
-    rainbow_cycle(0.1)  # rainbow cycle with 1ms delay per step
-    rainbow_two(0.1)  # rainbow cycle with 1ms delay per step
+    # rainbow_cycle(0.1)  # rainbow cycle with 1ms delay per step
+    # rainbow_two(0.1)  # rainbow cycle with 1ms delay per step
 
-    red_green()
-    rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
-    red_green()
+    # red_green()
+    # rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
+    # red_green()
 
-    fill(blue, 15) # Blue
-    fill(off, 2) # Off
+    # fill(blue, 15) # Blue
+    # fill(off, 2) # Off
