@@ -191,59 +191,59 @@ while True:
     fill((0, 0, 0), 1) # Off
     fill((0, 255, 0), 3) # Red
     fill((0, 0, 0), 1) # Off
-    fill((0, 0, 255), 3) # Blue
-    fill((0, 0, 0), 1) # Off
+    # fill((0, 0, 255), 3) # Blue
+    # fill((0, 0, 0), 1) # Off
 
     fill((255, 0, 0), 2) # Green
     fill((0, 0, 0), .5) # Off
     fill((0, 255, 0), 2) # Red
     fill((0, 0, 0), .5) # Off
-    fill((0, 0, 255), 2) # Blue
-    fill((0, 0, 0), .5) # Off
+    # fill((0, 0, 255), 2) # Blue
+    # fill((0, 0, 0), .5) # Off
 
     fill((255, 0, 0), 1) # Green
     fill((0, 0, 0), .25) # Off
     fill((0, 255, 0), 1) # Red
     fill((0, 0, 0), .25) # Off
-    fill((0, 0, 255), 1) # Blue
-    fill((0, 0, 0), .25) # Off
+    # fill((0, 0, 255), 1) # Blue
+    # fill((0, 0, 0), .25) # Off
 
     fill((255, 0, 0), .5) # Green
     fill((0, 0, 0), .125) # Off
     fill((0, 255, 0), .5) # Red
     fill((0, 0, 0), .125) # Off
-    fill((0, 0, 255), .5) # Blue
-    fill((0, 0, 0), .125) # Off
+    # fill((0, 0, 255), .5) # Blue
+    # fill((0, 0, 0), .125) # Off
 
     fill((255, 0, 0), .5) # Green
     fill((0, 0, 0), .125) # Off
     fill((0, 255, 0), .5) # Red
     fill((0, 0, 0), .125) # Off
-    fill((0, 0, 255), .5) # Blue
-    fill((0, 0, 0), .125) # Off
+    # fill((0, 0, 255), .5) # Blue
+    # fill((0, 0, 0), .125) # Off
 
     fill((255, 0, 0), .5) # Green
     fill((0, 0, 0), .125) # Off
     fill((0, 255, 0), .5) # Red
     fill((0, 0, 0), .125) # Off
-    fill((0, 0, 255), .5) # Blue
-    fill((0, 0, 0), .125) # Off
+    # fill((0, 0, 255), .5) # Blue
+    # fill((0, 0, 0), .125) # Off
 
     fill((255, 0, 0), .5) # Green
     fill((0, 0, 0), .125) # Off
     fill((0, 255, 0), .5) # Red
     fill((0, 0, 0), .125) # Off
-    fill((0, 0, 255), .5) # Blue
-    fill((0, 0, 0), .125) # Off
+    # fill((0, 0, 255), .5) # Blue
+    # fill((0, 0, 0), .125) # Off
 
     fill((255, 0, 0), .5) # Green
     fill((0, 0, 0), .125) # Off
     fill((0, 255, 0), .5) # Red
     fill((0, 0, 0), .125) # Off
-    fill((0, 0, 255), .5) # Blue
-    fill((0, 0, 0), .125) # Off
+    # fill((0, 0, 255), .5) # Blue
+    # fill((0, 0, 0), .125) # Off
 
-    red_green_three(0.01)
+    red_green_three(3)
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
 
     red_green()
@@ -262,4 +262,11 @@ while True:
     rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
     red_green()
 
-    red_green_three(0.001)
+    red_green_three(2)
+
+    fill((0, 0, 255), 5) # Blue
+    fill((0, 0, 0), 2) # Off
+
+    red_green_three(1)
+
+    fill((0, 0, 0), 5) # Off
