@@ -2,6 +2,7 @@
 import time
 import board
 import neopixel
+import random
 
 
 # Choose an open pin connected to the Data In of the NeoPixel strip, i.e. board.D18
@@ -16,7 +17,7 @@ num_pixels = 450
 ORDER = neopixel.GRB
 
 pixels = neopixel.NeoPixel(
-    pixel_pin, num_pixels, brightness=0.3, auto_write=False, pixel_order=ORDER
+    pixel_pin, num_pixels, brightness=0.5, auto_write=False, pixel_order=ORDER
 )
 
 # colors
@@ -213,163 +214,87 @@ def red_green():
     pixels.show()
     time.sleep(1)
 
-def fill_count_down():
-    fill(white, 1)
-    fill(off, .1)
-    fill(grey, 1)
-    fill(off, .1)
-    fill(magenta, 1)
-    fill(off, .1)
-    fill(pink, 1)
-    fill(off, .1)
-    fill(violett, 1)
-    fill(off, .1)
-    fill(blue, 1)
-    fill(off, .1)
-    fill(light_blue, 1)
-    fill(off, .1)
-    fill(cyan, 1)
-    fill(off, .1)
-    fill(blue_green, 1)
-    fill(off, .1)
-    fill(green, 1)
-    fill(off, .1)
-    fill(yellow_green, 1)
-    fill(off, .1)
-    fill(yellow, 1)
-    fill(off, .1)
-    fill(orange, 1)
-    fill(off, .1)
-    fill(brown, 1)
-    fill(off, .1)
-    fill(orange_red, 1)
-    fill(off, .1)
-    fill(red_orange, 1)
-    fill(off, .1)
-    fill(red_pink, 1)
-    fill(off, .1)
-    fill(red, 1)
-    fill(off, .1)
+def fill_random(wait):
+    for i in range(num_pixels):
+        pixels[i] = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+        pixels.show()
+        time.sleep(wait)
 
-    fill(white, .5)
-    fill(off, .1)
-    fill(grey, .5)
-    fill(off, .1)
-    fill(magenta, .5)
-    fill(off, .1)
-    fill(pink, .5)
-    fill(off, .1)
-    fill(violett, .5)
-    fill(off, .1)
-    fill(blue, .5)
-    fill(off, .1)
-    fill(light_blue, .5)
-    fill(off, .1)
-    fill(cyan, .5)
-    fill(off, .1)
-    fill(blue_green, .5)
-    fill(off, .1)
-    fill(green, .5)
-    fill(off, .1)
-    fill(yellow_green, .5)
-    fill(off, .1)
-    fill(yellow, .5)
-    fill(off, .1)
-    fill(orange, .5)
-    fill(off, .1)
-    fill(brown, .5)
-    fill(off, .1)
-    fill(orange_red, .5)
-    fill(off, .1)
-    fill(red_orange, .5)
-    fill(off, .1)
-    fill(red_pink, .5)
-    fill(off, .1)
-    fill(red, .5)
-    fill(off, .1)
+def fill_random_two(wait):
+    for i in range(num_pixels):
+        if (i % 2) == 0:
+            pixels[i] = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+        else:
+            pixels[i] = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+        pixels.show()
+        time.sleep(wait)
 
-    fill(white, .25)
-    fill(off, .1)
-    fill(grey, .25)
-    fill(off, .1)
-    fill(magenta, .25)
-    fill(off, .1)
-    fill(pink, .25)
-    fill(off, .1)
-    fill(violett, .25)
-    fill(off, .1)
-    fill(blue, .25)
-    fill(off, .1)
-    fill(light_blue, .25)
-    fill(off, .1)
-    fill(cyan, .25)
-    fill(off, .1)
-    fill(blue_green, .25)
-    fill(off, .1)
-    fill(green, .25)
-    fill(off, .1)
-    fill(yellow_green, .25)
-    fill(off, .1)
-    fill(yellow, .25)
-    fill(off, .1)
-    fill(orange, .25)
-    fill(off, .1)
-    fill(brown, .25)
-    fill(off, .1)
-    fill(orange_red, .25)
-    fill(off, .1)
-    fill(red_orange, .25)
-    fill(off, .1)
-    fill(red_pink, .25)
-    fill(off, .1)
-    fill(red, .25)
-    fill(off, .1)
+def fill_random_three(wait):
+    for i in range(num_pixels):
+        if (i % 3) == 0:
+            pixels[i] = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+        else:
+            pixels[i] = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+        pixels.show()
+        time.sleep(wait)
 
-    fill(white, .1)
-    fill(off, .01)
-    fill(grey, .1)
-    fill(off, .01)
-    fill(magenta, .1)
-    fill(off, .01)
-    fill(pink, .1)
-    fill(off, .01)
-    fill(violett, .1)
-    fill(off, .01)
-    fill(blue, .1)
-    fill(off, .01)
-    fill(light_blue, .1)
-    fill(off, .01)
-    fill(cyan, .1)
-    fill(off, .01)
-    fill(blue_green, .1)
-    fill(off, .01)
-    fill(green, .1)
-    fill(off, .01)
-    fill(yellow_green, .1)
-    fill(off, .01)
-    fill(yellow, .1)
-    fill(off, .01)
-    fill(orange, .1)
-    fill(off, .01)
-    fill(brown, .1)
-    fill(off, .01)
-    fill(orange_red, .1)
-    fill(off, .01)
-    fill(red_orange, .1)
-    fill(off, .01)
-    fill(red_pink, .1)
-    fill(off, .01)
-    fill(red, .1)
-    fill(off, .01)
+def fill_random_four(wait):
+    for i in range(num_pixels):
+        if (i % 4) == 0:
+            pixels[i] = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+        else:
+            pixels[i] = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+        pixels.show()
+        time.sleep(wait)
 
+def ten_count(wait):
+    for i in range(10):
+        j = 10 - i
+        pixels.fill((0, 0, 0))
+        pixels[j] = (255, 255, 255)
+        pixels.show()
+        time.sleep(.1)
+
+def fill_count_down(number):
+    for i in range(number):
+        fill_random(1)
+        fill(off, .1)
+
+    for i in range(number):
+        fill_random(.5)
+        fill(off, .1)
+
+    for i in range(number):
+        fill_random(.25)
+        fill(off, .1)
+
+    for i in range(number):
+        fill_random(.5)
+        fill(off, .1)
+
+    for i in range(number):
+        fill_random(.1)
+        fill(off, .01)
+
+def fill_random_show(wait):
+    fill_random_two(wait)
+    fill(off, wait) # Off
+    fill_random_three(wait)
+    fill(off, wait) # Off
+    fill_random_four(wait)
+    fill(off, wait) # Off
 while True:
-    fill_count_down()
+    fill_count_down(16)
     red_green_three(.0001)
     fill(off, .01) # Off
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
     fill(off, .01) # Off
-    fill(off, .01) # Off
+    fill_random_show(.01)
     red_green_two()
+    fill(off, .01) # Off
+    fill_random_show(.001)
     fill(off, .01) # Off
     rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
     fill(off, .01) # Off
+    fill(blue, 5)
+    fill(off, 5) # Off
