@@ -296,5 +296,7 @@ while True:
     fill(off, .01) # Off
     rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
     fill(off, .01) # Off
-    fill(blue, 5)
+    fill(blue, 20)
+    fill(off, 1) # Off
+    fill(white, 20)
     fill(off, 5) # Off
