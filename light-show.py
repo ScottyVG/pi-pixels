@@ -284,7 +284,7 @@ def fill_random_show(wait):
     fill_random_four(wait)
     fill(off, wait) # Off
 while True:
-    fill_count_down(16)
+    # fill_count_down(16)
     red_green_three(.0001)
     fill(off, .01) # Off
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
