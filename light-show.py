@@ -40,7 +40,10 @@ red_orange = (255, 127, 0)
 red_pink = (255, 0, 127)
 red = (255, 0, 0)
 
-
+def fill(color, wait):
+    pixels.fill(color)
+    pixels.show()
+    time.sleep(wait)
 
 def wheel(pos):
     # Input a value 0 to 255 to get a color value.
@@ -210,13 +213,7 @@ def red_green():
     pixels.show()
     time.sleep(1)
 
-def fill(color, wait):
-    pixels.fill(color)
-    pixels.show()
-    time.sleep(wait)
-
-
-while True:
+def fill_count_down():
     fill(white, 1)
     fill(off, .1)
     fill(grey, 1)
@@ -365,70 +362,14 @@ while True:
     fill(red, .1)
     fill(off, .01)
 
+while True:
+    fill_count_down()
     red_green_three(.0001)
-    fill(off, .0001) # Off
-
-    fill(green, 3) # Green
-    fill(off, 1) # Off
-    fill(red, 3) # Red
-    fill(off, 1) # Off
-
-    fill(green, 2) # Green
-    fill(off, .5) # Off
-    fill(red, 2) # Red
-    fill(off, .5) # Off
-
-    fill(green, 1) # Green
-    fill(off, .25) # Off
-    fill(red, 1) # Red
-    fill(off, .25) # Off
-
-    fill(green, .5) # Green
-    fill(off, .125) # Off
-    fill(red, .5) # Red
-    fill(off, .125) # Off
-
-    fill(green, .5) # Green
-    fill(off, .125) # Off
-    fill(red, .5) # Red
-    fill(off, .125) # Off
-
-    fill(green, .5) # Green
-    fill(off, .125) # Off
-    fill(red, .5) # Red
-    fill(off, .125) # Off
-
-    fill(green, .5) # Green
-    fill(off, .125) # Off
-    fill(red, .5) # Red
-    fill(off, .125) # Off
-
-    fill(green, .5) # Green
-    fill(off, .125) # Off
-    fill(red, .5) # Red
-    fill(off, .125) # Off
-
-    red_green_three(.001)
-    fill(off, .01) # Off
-    red_green_three(.001)
     fill(off, .01) # Off
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
-
-    # red_green()
-    rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
+    fill(off, .01) # Off
+    fill(off, .01) # Off
     red_green_two()
-
-
-    # red_green_two()
-    rainbow_two(0.01)  # rainbow cycle with 1ms delay per step
-    # red_green()
-
-    # rainbow_cycle(0.1)  # rainbow cycle with 1ms delay per step
-    # rainbow_two(0.1)  # rainbow cycle with 1ms delay per step
-
-    # red_green()
-    # rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
-    # red_green()
-
-    # fill(blue, 15) # Blue
-    # fill(off, 2) # Off
+    fill(off, .01) # Off
+    rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
+    fill(off, .01) # Off
