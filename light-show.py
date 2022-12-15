@@ -242,9 +242,12 @@ while True:
     # fill((0, 0, 255), .5) # Blue
     # fill((0, 0, 0), .125) # Off
 
-    red_green_three(.01)
-    red_green_three(.01)
-    red_green_three(.01)
+    red_green_three(.001)
+    fill((0, 0, 0), .01) # Off
+    red_green_three(.001)
+    fill((0, 0, 0), .01) # Off
+    red_green_three(.001)
+    fill((0, 0, 0), .01) # Off
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
 
     red_green()
@@ -269,7 +272,10 @@ while True:
     fill((0, 0, 0), 2) # Off
 
     red_green_three(.01)
+    fill((0, 0, 0), .01) # Off
     red_green_three(.01)
+    fill((0, 0, 0), .01) # Off
     red_green_three(.01)
+    fill((0, 0, 0), .01) # Off
 
     fill((0, 0, 0), 5) # Off
