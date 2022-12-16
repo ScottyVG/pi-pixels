@@ -231,7 +231,7 @@ def fill_random_four(wait):
         time.sleep(wait)
 
 def fill_all_random(wait):
-    pixels.fill(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+    pixels.fill((random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
     pixels.show()
     time.sleep(wait)
 
