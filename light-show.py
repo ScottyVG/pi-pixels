@@ -87,7 +87,16 @@ def rainbow_two(wait):
         pixels.show()
         time.sleep(wait)
 
-def red_green_three(wait):
+def green_red_run(wait):
+    for i in range(num_pixels):
+        if (i % 2) == 0:
+            pixels[i] = (0, 255, 0) # Red
+        else:
+            pixels[i] = (255, 0, 0) # Green
+        pixels.show()
+        time.sleep(wait)
+
+def red_green_run(wait):
     for i in range(num_pixels):
         if (i % 2) == 0:
             pixels[i] = (255, 0, 0) # Green
@@ -96,120 +105,94 @@ def red_green_three(wait):
         pixels.show()
         time.sleep(wait)
 
-# def red_green_three_reverse(wait):
-    # for i in range(num_pixels):
-    #     j = num_pixels - i
-    #     if (j % 2) == 0:
-    #         pixels[j] = (255, 0, 0) # Green
-    #     else:
-    #         pixels[j] = (0, 255, 0) # Red
-    #     pixels.show()
-    #     time.sleep(wait)
-
-def red_green_two():
-
+def green_red_wait(wait):
     pixels.fill((255, 0, 0)) # Green
     pixels.show()
-    time.sleep(2)
-
+    time.sleep(wait)
     pixels.fill((0, 255, 0)) # Red
     pixels.show()
-    time.sleep(2)
+    time.sleep(wait)
+
+def red_green_wait(wait):
+    pixels.fill((0, 255, 0)) # Red
+    pixels.show()
+    time.sleep(wait)
+    pixels.fill((255, 0, 0)) # Green
+    pixels.show()
+    time.sleep(wait)
+
 
 def red_green():
-
     # ho ho hoo
     pixels.fill((255, 0, 0)) # Green
     pixels.show()
     time.sleep(.25)
-
     pixels.fill((0, 255, 0)) # Red
     pixels.show()
     time.sleep(.25)
-
     pixels.fill((255, 0, 0)) # Green
     pixels.show()
     time.sleep(.50)
-
     # ho ho hoo
     pixels.fill((0, 255, 0)) # Red
     pixels.show()
     time.sleep(.25)
-
     pixels.fill((255, 0, 0)) # Green
     pixels.show()
     time.sleep(.25)
-
     pixels.fill((0, 255, 0)) # Red
     pixels.show()
     time.sleep(.50)
-
     # ho ho ho ho hoo
     pixels.fill((255, 0, 0)) # Green
     pixels.show()
     time.sleep(.25)
-
     pixels.fill((0, 255, 0)) # Red
     pixels.show()
     time.sleep(.25)
-
     pixels.fill((255, 0, 0)) # Green
     pixels.show()
     time.sleep(.25)
-
     pixels.fill((0, 255, 0)) # Red
     pixels.show()
     time.sleep(.25)
-
     pixels.fill((255, 0, 0)) # Green
     pixels.show()
     time.sleep(.50)
-
     # ho ho hoo - ta ho hoo - da ho ho ho ho hoo - hoo
     pixels.fill((0, 255, 0)) # Red
     pixels.show()
     time.sleep(.25)
-
     pixels.fill((255, 0, 0)) # Green
     pixels.show()
     time.sleep(.25)
-
     pixels.fill((0, 255, 0)) # Red
     pixels.show()
     time.sleep(.50)
-
     pixels.fill((255, 0, 0)) # Green
     pixels.show()
     time.sleep(.25)
-
     pixels.fill((0, 255, 0)) # Red
     pixels.show()
     time.sleep(.25)
-
     pixels.fill((255, 0, 0)) # Green
     pixels.show()
     time.sleep(.50)
-
     pixels.fill((0, 255, 0)) # Red
     pixels.show()
     time.sleep(.25)
-
     pixels.fill((255, 0, 0)) # Green
     pixels.show()
     time.sleep(.25)
-
     pixels.fill((0, 255, 0)) # Red
     pixels.show()
     time.sleep(.25)
-
     pixels.fill((255, 0, 0)) # Green
     pixels.show()
     time.sleep(.25)
-
     pixels.fill((0, 255, 0)) # Red
     pixels.show()
     time.sleep(.50)
-
     pixels.fill((255, 0, 0)) # Green
     pixels.show()
     time.sleep(1)
@@ -247,22 +230,6 @@ def fill_random_four(wait):
         pixels.show()
         time.sleep(wait)
 
-def ten_count(wait):
-    for i in range(10):
-        j = 10 - i
-        pixels.fill((0, 0, 0))
-        pixels[j] = (255, 255, 255)
-        pixels.show()
-        time.sleep(.1)
-
-def twinkle(wait):
-    for i in range(450):
-        j = 450 - i
-        pixels.fill((0, 0, 0))
-        pixels[j] = (255, 255, 255)
-        pixels.show()
-        time.sleep(wait)
-
 def fill_random_show(wait):
     fill_random_two(wait)
     fill(off, 0.01) # Off
@@ -272,7 +239,7 @@ def fill_random_show(wait):
     fill(off, 0.01) # Off
 
 def christmas():
-    red_green_three(.0001)
+    red_green_run(.0001)
     fill(off, .001) # Off
     fill(red, .001) # Off
     fill(off, .001) # Off
@@ -296,22 +263,14 @@ def christmas():
     fill(off, .001) # Off
 
 while True:
-    # fill_count_down(16)
-    # ten_count(.1)
-    fill(green, 1) # Off
-    fill(red, 1) # Off
-    fill(green, 1) # Off
-    fill(red, 1) # Off
+    green_red_wait(1)
+    red_green_wait(1)
     christmas()
-    fill(red, 1) # Off
-    fill(green, 1) # Off
-    fill(red, 1) # Off
-    fill(green, 1) # Off
+    red_green_wait(1)
+    green_red_wait(1)
     christmas()
-    fill(green, 1) # Off
-    fill(red, 1) # Off
-    fill(green, 1) # Off
-    fill(red, 1) # Off
+    green_red_wait(1)
+    red_green_wait(1)
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
     fill(off, .01) # Off
     # fill_random(1)
@@ -320,42 +279,38 @@ while True:
     fill_random_show(.001)
     # fill_random(1)
     rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
-    fill(green, 1) # Off
-    fill(red, 1) # Off
-    fill(green, 1) # Off
-    fill(red, 1) # Off
+    green_red_wait(1)
+    red_green_wait(1)
     christmas()
-    fill(red, 1) # Off
-    fill(green, 1) # Off
-    fill(red, 1) # Off
-    fill(green, 1) # Off
+    red_green_wait(1)
+    green_red_wait(1)
     christmas()
-    fill(green, 1) # Off
-    fill(red, 1) # Off
-    fill(green, 1) # Off
-    fill(red, 1) # Off
+    fill_random_show(.01)
+    green_red_wait(1)
+    red_green_wait(1)
     rainbow_two(0.01)  # rainbow cycle with 1ms delay per step
     red_green()
-    fill(red, 1) # Off
-    fill(green, 1) # Off
-    fill(red, 1) # Off
-    fill(green, 1) # Off
-    fill(off, .01) # Off
+    red_green_wait(1)
+    green_red_wait(1)
     rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
     fill(off, .01) # Off
     christmas()
-    fill(red, 1) # Off
-    fill(green, 1) # Off
-    fill(red, 1) # Off
-    fill(green, 1) # Off
-    fill(off, .01) # Off
+    red_green_wait(1)
+    green_red_wait(1)
     rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
     christmas()
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
+    christmas()
+    red_green_wait(1)
+    green_red_wait(1)
     rainbow_two(0.001)
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
-    red_green_three(.0001)
+    red_green_run(.0001)
     rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
+    christmas()
+    red_green_wait(1)
+    red_green_run(.0001)
+    green_red_wait(1)
     rainbow_two(0.001)
     fill(blue, 20)
     fill(off, .001) # Off
