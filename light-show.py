@@ -287,11 +287,23 @@ while True:
     # fill_count_down(16)
     red_green_three(.0001)
     fill(off, .01) # Off
+    red_green_three(.0001)
+    fill(off, .01) # Off
+    red_green_three(.0001)
+    fill(off, .01) # Off
+    red_green_three(.0001)
+    fill(off, .01) # Off
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
     fill(off, .01) # Off
     red_green()
     fill(off, .01) # Off
     fill_random_show(.001)
+    red_green_three(.0001)
+    fill(off, .01) # Off
+    red_green_three(.0001)
+    fill(off, .01) # Off
+    red_green_three(.0001)
+    fill(off, .01) # Off
     red_green_three(.0001)
     fill(off, .01) # Off
     red_green()
@@ -301,6 +313,13 @@ while True:
     fill(blue, 20)
     fill(off, 1) # Off
     red_green_three(.0001)
+    fill(off, .01) # Off
+    red_green_three(.0001)
+    fill(off, .01) # Off
+    red_green_three(.0001)
+    fill(off, .01) # Off
+    red_green_three(.0001)
+    fill(off, .01) # Off
     fill(white, 20)
     fill(off, 5) # Off
     red_green_three(.0001)
