@@ -283,43 +283,51 @@ def fill_random_show(wait):
     fill(off, wait) # Off
     fill_random_four(wait)
     fill(off, wait) # Off
+
+def christmas():
+    red_green_three(.0001)
+    fill(off, .01) # Off
+    fill(red, .001) # Off
+    fill(off, .001) # Off
+    fill(green, .001) # Off
+    fill(off, .001) # Off
+    fill(red, .001) # Off
+    fill(off, .001) # Off
+    fill(green, .001) # Off
+    fill(off, .001) # Off
+    fill(red, .001) # Off
+    fill(off, .001) # Off
+    fill(green, .001) # Off
+    fill(off, .001) # Off
+    fill(red, .001) # Off
+    fill(off, .001) # Off
+    fill(green, .001) # Off
+    fill(off, .001) # Off
+    fill(red, .001) # Off
+    fill(off, .001) # Off
+    fill(green, .001) # Off
+    fill(off, .001) # Off
+
 while True:
     # fill_count_down(16)
-    red_green_three(.0001)
-    fill(off, .01) # Off
-    red_green_three(.0001)
-    fill(off, .01) # Off
-    red_green_three(.0001)
-    fill(off, .01) # Off
-    red_green_three(.0001)
-    fill(off, .01) # Off
+    ten_count(.1)
+    christmas()
+    christmas()
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
     fill(off, .01) # Off
     red_green()
     fill(off, .01) # Off
     fill_random_show(.001)
-    red_green_three(.0001)
-    fill(off, .01) # Off
-    red_green_three(.0001)
-    fill(off, .01) # Off
-    red_green_three(.0001)
-    fill(off, .01) # Off
-    red_green_three(.0001)
-    fill(off, .01) # Off
+    christmas()
+    christmas()
     red_green()
     fill(off, .01) # Off
     rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
     fill(off, .01) # Off
     fill(blue, 20)
     fill(off, 1) # Off
-    red_green_three(.0001)
-    fill(off, .01) # Off
-    red_green_three(.0001)
-    fill(off, .01) # Off
-    red_green_three(.0001)
-    fill(off, .01) # Off
-    red_green_three(.0001)
-    fill(off, .01) # Off
+    christmas()
+    christmas()
     fill(white, 20)
     fill(off, 5) # Off
     red_green_three(.0001)
