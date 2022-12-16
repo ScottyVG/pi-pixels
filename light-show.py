@@ -297,21 +297,21 @@ def christmas():
     fill(off, .001) # Off
     fill(green, .001) # Off
     fill(off, .001) # Off
-    fill(red, .001) # Off
+    fill(red, .01) # Off
     fill(off, .001) # Off
-    fill(green, .001) # Off
-    fill(off, .001) # Off
-    fill(red, .001) # Off
-    fill(off, .001) # Off
-    fill(green, .001) # Off
+    fill(green, .01) # Off
     fill(off, .001) # Off
     fill(red, .001) # Off
     fill(off, .001) # Off
     fill(green, .001) # Off
     fill(off, .001) # Off
-    fill(red, .001) # Off
+    fill(red, .01) # Off
     fill(off, .001) # Off
-    fill(green, .001) # Off
+    fill(green, .01) # Off
+    fill(off, .001) # Off
+    fill(red, .01) # Off
+    fill(off, .001) # Off
+    fill(green, .01) # Off
     fill(off, .001) # Off
 
 while True:
