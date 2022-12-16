@@ -230,6 +230,16 @@ def fill_random_four(wait):
         pixels.show()
         time.sleep(wait)
 
+def shooting_star():
+    for i in range(num_pixels):
+        pixels[i] = (255, 255, 255)
+        pixels.show()
+        time.sleep(.001)
+    for i in range(num_pixels):
+        pixels[i] = (0, 0, 0)
+        pixels.show()
+        time.sleep(.001)
+
 def fill_random_show(wait):
     fill_random_two(wait)
     fill(off, 0.01) # Off
@@ -262,55 +272,55 @@ def christmas():
     fill(green, .01) # Off
     fill(off, .001) # Off
 
+def red_green_show():
+    red_green_wait(1)
+    red_green_wait(1)
+    red_green_wait(1)
+def green_red_show():
+    red_green_wait(1)
+    red_green_wait(1)
+    red_green_wait(1)
+
 while True:
-    green_red_wait(1)
-    red_green_wait(1)
+    shooting_star()
+    red_green_show()
     christmas()
-    red_green_wait(1)
-    green_red_wait(1)
+    green_red_show()
     christmas()
-    green_red_wait(1)
-    red_green_wait(1)
+    red_green_show()
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
     fill(off, .01) # Off
-    # fill_random(1)
     red_green()
     fill(off, .01) # Off
     fill_random_show(.001)
-    # fill_random(1)
     rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
-    green_red_wait(1)
-    red_green_wait(1)
+    green_red_show()
     christmas()
-    red_green_wait(1)
-    green_red_wait(1)
+    red_green_show()
     christmas()
     fill_random_show(.01)
-    green_red_wait(1)
-    red_green_wait(1)
+    green_red_show()
     rainbow_two(0.01)  # rainbow cycle with 1ms delay per step
     red_green()
-    red_green_wait(1)
-    green_red_wait(1)
+    red_green_show()
     rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
     fill(off, .01) # Off
     christmas()
-    red_green_wait(1)
-    green_red_wait(1)
+    red_green_show()
     rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
     christmas()
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
     christmas()
-    red_green_wait(1)
-    green_red_wait(1)
+    green_red_show()
     rainbow_two(0.001)
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
     red_green_run(.0001)
     rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
     christmas()
-    red_green_wait(1)
+    red_green_show()
     red_green_run(.0001)
-    green_red_wait(1)
+    green_red_show()
     rainbow_two(0.001)
     fill(blue, 20)
+    shooting_star()
     fill(off, .001) # Off
