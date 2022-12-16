@@ -368,7 +368,9 @@ while True:
     fill(red, 1) # Off
     fill(green, 1) # Off
     fill(off, .01) # Off
+    rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
     christmas()
     red_green_three(.0001)
+    rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
     fill(blue, 20)
     fill(off, .001) # Off
