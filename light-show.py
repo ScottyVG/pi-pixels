@@ -298,19 +298,16 @@ def christmas():
 while True:
     # fill_count_down(16)
     # ten_count(.1)
-    twinkle(.001)
     fill(green, 1) # Off
     fill(red, 1) # Off
     fill(green, 1) # Off
     fill(red, 1) # Off
     christmas()
-    twinkle(.001)
     fill(red, 1) # Off
     fill(green, 1) # Off
     fill(red, 1) # Off
     fill(green, 1) # Off
     christmas()
-    twinkle(.001)
     fill(green, 1) # Off
     fill(red, 1) # Off
     fill(green, 1) # Off
@@ -355,14 +352,10 @@ while True:
     rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
     christmas()
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
-    twinkle(.001)
     rainbow_two(0.001)
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
     red_green_three(.0001)
-    twinkle(.001)
     rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
-    twinkle(.001)
     rainbow_two(0.001)
-    twinkle(.001)
     fill(blue, 20)
     fill(off, .001) # Off
