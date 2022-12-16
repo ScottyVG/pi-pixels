@@ -240,6 +240,38 @@ def shooting_star():
         pixels.show()
         time.sleep(.001)
 
+def small_shooting_star():
+    for i in range(num_pixels):
+        if (i % 2) == 0:
+            pixels[i] = (255, 255, 255)
+        else:
+            pixels[i] = (0, 0, 0)
+        pixels.show()
+        time.sleep(.001)
+    for i in range(num_pixels):
+        if (i % 2) == 0:
+            pixels[i] = (0, 0, 0)
+        else:
+            pixels[i] = (255, 255, 255)
+        pixels.show()
+        time.sleep(.001)
+
+def scott_shooting_star():
+    for i in range(num_pixels):
+        if (i % 2) == 0:
+            pixels[i] = (255, 255, 255)
+        else:
+            pixels[i] = (0, 0, 0)
+        pixels.show()
+        time.sleep(.001)
+        for j in range(num_pixels):
+            if (j % 2) == 0:
+                pixels[j] = (0, 0, 0)
+            else:
+                pixels[j] = (255, 255, 255)
+            pixels.show()
+            time.sleep(.001)
+
 def fill_random_show(wait):
     fill_random_two(wait)
     fill(off, 0.01) # Off
@@ -282,9 +314,14 @@ def green_red_show():
     red_green_wait(1)
 
 while True:
+    scott_shooting_star()
+    small_shooting_star()
+    scott_shooting_star()
+    small_shooting_star()
     shooting_star()
     red_green_show()
     christmas()
+    shooting_star()
     green_red_show()
     christmas()
     red_green_show()
@@ -296,8 +333,10 @@ while True:
     rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
     green_red_show()
     christmas()
+    shooting_star()
     red_green_show()
     christmas()
+    shooting_star()
     fill_random_show(.01)
     green_red_show()
     rainbow_two(0.01)  # rainbow cycle with 1ms delay per step
@@ -308,6 +347,7 @@ while True:
     christmas()
     red_green_show()
     rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
+    shooting_star()
     christmas()
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
     christmas()
