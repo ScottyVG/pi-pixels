@@ -255,40 +255,21 @@ def ten_count(wait):
         pixels.show()
         time.sleep(.1)
 
-def fill_count_down(number):
-    for i in range(number):
-        fill_random(1)
-        fill(off, .1)
-
-    for i in range(number):
-        fill_random(.5)
-        fill(off, .1)
-
-    for i in range(number):
-        fill_random(.25)
-        fill(off, .1)
-
-    for i in range(number):
-        fill_random(.5)
-        fill(off, .1)
-
-    for i in range(number):
-        fill_random(.1)
-        fill(off, .01)
+def twinkle(wait):
+    for i in range(450):
+        j = 450 - i
+        pixels.fill((0, 0, 0))
+        pixels[j] = (255, 255, 255)
+        pixels.show()
+        time.sleep(wait)
 
 def fill_random_show(wait):
     fill_random_two(wait)
-    # fill(off, 0.01) # Off
-    # fill_random(wait)
-    # fill(off, 0.01) # Off
+    fill(off, 0.01) # Off
     fill_random_three(wait)
-    # fill(off, 0.01) # Off
-    # fill_random(wait)
-    # fill(off, 0.01) # Off
+    fill(off, 0.01) # Off
     fill_random_four(wait)
-    # fill(off, 0.01) # Off
-    # fill_random(wait)
-    # fill(off, 0.01) # Off
+    fill(off, 0.01) # Off
 
 def christmas():
     red_green_three(.0001)
@@ -317,16 +298,19 @@ def christmas():
 while True:
     # fill_count_down(16)
     # ten_count(.1)
+    twinkle(.001)
     fill(green, 1) # Off
     fill(red, 1) # Off
     fill(green, 1) # Off
     fill(red, 1) # Off
     christmas()
+    twinkle(.001)
     fill(red, 1) # Off
     fill(green, 1) # Off
     fill(red, 1) # Off
     fill(green, 1) # Off
     christmas()
+    twinkle(.001)
     fill(green, 1) # Off
     fill(red, 1) # Off
     fill(green, 1) # Off
@@ -370,7 +354,15 @@ while True:
     fill(off, .01) # Off
     rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
     christmas()
+    rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
+    twinkle(.001)
+    rainbow_two(0.001)
+    rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
     red_green_three(.0001)
+    twinkle(.001)
     rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
+    twinkle(.001)
+    rainbow_two(0.001)
+    twinkle(.001)
     fill(blue, 20)
     fill(off, .001) # Off
