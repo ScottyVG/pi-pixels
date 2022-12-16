@@ -278,17 +278,17 @@ def fill_count_down(number):
 
 def fill_random_show(wait):
     fill_random_two(wait)
-    fill(off, 0.01) # Off
-    fill_random(wait)
-    fill(off, 0.01) # Off
+    # fill(off, 0.01) # Off
+    # fill_random(wait)
+    # fill(off, 0.01) # Off
     fill_random_three(wait)
-    fill(off, 0.01) # Off
-    fill_random(wait)
-    fill(off, 0.01) # Off
+    # fill(off, 0.01) # Off
+    # fill_random(wait)
+    # fill(off, 0.01) # Off
     fill_random_four(wait)
-    fill(off, 0.01) # Off
-    fill_random(wait)
-    fill(off, 0.01) # Off
+    # fill(off, 0.01) # Off
+    # fill_random(wait)
+    # fill(off, 0.01) # Off
 
 def christmas():
     red_green_three(.0001)
@@ -317,33 +317,41 @@ def christmas():
 while True:
     # fill_count_down(16)
     # ten_count(.1)
+    fill(green, 1) # Off
+    fill(red, 1) # Off
+    fill(green, 1) # Off
+    fill(red, 1) # Off
     christmas()
     fill(red, 1) # Off
     fill(green, 1) # Off
     fill(red, 1) # Off
     fill(green, 1) # Off
     christmas()
-    fill(red, 1) # Off
     fill(green, 1) # Off
     fill(red, 1) # Off
     fill(green, 1) # Off
+    fill(red, 1) # Off
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
     fill(off, .01) # Off
-    fill_random(1)
+    # fill_random(1)
     red_green()
     fill(off, .01) # Off
     fill_random_show(.001)
-    fill_random(1)
+    # fill_random(1)
+    fill(green, 1) # Off
+    fill(red, 1) # Off
+    fill(green, 1) # Off
+    fill(red, 1) # Off
     christmas()
     fill(red, 1) # Off
     fill(green, 1) # Off
     fill(red, 1) # Off
     fill(green, 1) # Off
     christmas()
-    fill(red, 1) # Off
     fill(green, 1) # Off
     fill(red, 1) # Off
     fill(green, 1) # Off
+    fill(red, 1) # Off
     red_green()
     fill(red, 1) # Off
     fill(green, 1) # Off
