@@ -232,11 +232,11 @@ def fill_random_four(wait):
 
 def fill_random_show(wait):
     fill_random_two(wait)
-    fill(off, 0.01) # Off
+    # fill(off, 0.01) # Off
     fill_random_three(wait)
-    fill(off, 0.01) # Off
+    # fill(off, 0.01) # Off
     fill_random_four(wait)
-    fill(off, 0.01) # Off
+    # fill(off, 0.01) # Off
 
 def christmas():
     red_green_run(.0001)
@@ -265,21 +265,13 @@ def christmas():
 def red_green_show():
     red_green_wait(1)
     red_green_wait(1)
-    red_green_wait(1)
 def green_red_show():
-    red_green_wait(1)
     red_green_wait(1)
     red_green_wait(1)
 
 while True:
-
-
-
-
-
     red_green_show()
     christmas()
-
     green_red_show()
     christmas()
     red_green_show()
@@ -289,36 +281,49 @@ while True:
     fill(off, .01) # Off
     fill_random_show(.001)
     rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
-    green_red_show()
-    christmas()
-
-    red_green_show()
-    christmas()
-
-    fill_random_show(.01)
-    green_red_show()
-    rainbow_two(0.01)  # rainbow cycle with 1ms delay per step
-    red_green()
-    red_green_show()
-    rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
-    fill(off, .01) # Off
-    christmas()
-    red_green_show()
-    rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
-
-    christmas()
-    rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
-    christmas()
-    green_red_show()
-    rainbow_two(0.001)
-    rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
-    red_green_run(.0001)
-    rainbow_cycle(0.01)  # rainbow cycle with 1ms delay per step
-    christmas()
-    red_green_show()
-    red_green_run(.0001)
-    green_red_show()
-    rainbow_two(0.001)
     fill(blue, 20)
-
     fill(off, .001) # Off
+    fill(blue, 5)
+    fill(off, .01) # Off
+    fill(blue, 4)
+    fill(off, .01) # Off
+    fill(blue, 3)
+    fill(off, .01) # Off
+    fill(blue, 2)
+    fill(off, .01) # Off
+    fill(blue, 1)
+    fill(off, .01) # Off
+    fill(blue, .5)
+    fill(off, .01) # Off
+    fill(blue, .25)
+    fill(off, .01) # Off
+    fill(blue, .1)
+    fill(off, .01) # Off
+    fill(blue, .01)
+    fill(off, .01) # Off
+    fill(blue, .01)
+    fill(off, .01) # Off
+    fill(blue, .01)
+    fill(off, .01) # Off
+    fill(blue, .01)
+    fill(off, .01) # Off
+    fill(blue, .001)
+    fill(off, .001) # Off
+    fill(blue, .01)
+    fill(off, .001) # Off
+    fill(blue, .001)
+    fill(off, .001) # Off
+    fill(blue, .001)
+    fill(off, .001) # Off
+    fill(blue, .001)
+    fill(off, .001) # Off
+    fill(blue, .001)
+    fill(off, .001) # Off
+    fill(blue, .01)
+    fill(off, .001) # Off
+    fill(blue, .001)
+    fill(off, .001) # Off
+    fill(blue, .001)
+    fill(off, .001) # Off
+    fill(blue, .001)
+    fill(off, 5) # Off
