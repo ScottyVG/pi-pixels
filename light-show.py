@@ -230,12 +230,17 @@ def fill_random_four(wait):
         pixels.show()
         time.sleep(wait)
 
+def fill_all_random(wait):
+    pixels.fill(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+    pixels.show()
+    time.sleep(wait)
+
 def fill_random_show(wait):
     fill_random_two(wait)
     # fill(off, 0.01) # Off
-    fill_random_three(wait)
+    # fill_random_three(wait)
     # fill(off, 0.01) # Off
-    fill_random_four(wait)
+    # fill_random_four(wait)
     # fill(off, 0.01) # Off
 
 def christmas():
@@ -269,20 +274,7 @@ def green_red_show():
     red_green_wait(1)
     red_green_wait(1)
 
-while True:
-    red_green_show()
-    christmas()
-    green_red_show()
-    christmas()
-    red_green_show()
-    rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
-    fill(off, .01) # Off
-    red_green()
-    fill(off, .01) # Off
-    fill_random_show(.001)
-    rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
-    fill(blue, 20)
-    fill(off, .001) # Off
+def blue_xmas():
     fill(blue, 5)
     fill(off, .01) # Off
     fill(blue, 4)
@@ -326,4 +318,22 @@ while True:
     fill(blue, .001)
     fill(off, .001) # Off
     fill(blue, .001)
-    fill(off, 5) # Off
+
+while True:
+    red_green_show()
+    christmas()
+    green_red_show()
+    christmas()
+    red_green_show()
+    fill_all_random(2)
+    rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
+    fill(off, .01) # Off
+    fill_all_random(2)
+    red_green()
+    fill_all_random(2)
+    fill(off, .01) # Off
+    fill_random_show(.001)
+    fill_all_random(2)
+    rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
+    fill_all_random(2)
+    blue_xmas()
