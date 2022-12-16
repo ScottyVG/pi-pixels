@@ -338,6 +338,7 @@ while True:
     fill(off, .01) # Off
     fill_random_show(.001)
     # fill_random(1)
+    rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
     fill(green, 1) # Off
     fill(red, 1) # Off
     fill(green, 1) # Off
@@ -352,6 +353,7 @@ while True:
     fill(red, 1) # Off
     fill(green, 1) # Off
     fill(red, 1) # Off
+    rainbow_two(0.01)  # rainbow cycle with 1ms delay per step
     red_green()
     fill(red, 1) # Off
     fill(green, 1) # Off
@@ -360,8 +362,6 @@ while True:
     fill(off, .01) # Off
     rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
     fill(off, .01) # Off
-    fill(blue, 20)
-    fill(off, .001) # Off
     christmas()
     fill(red, 1) # Off
     fill(green, 1) # Off
@@ -370,3 +370,5 @@ while True:
     fill(off, .01) # Off
     christmas()
     red_green_three(.0001)
+    fill(blue, 20)
+    fill(off, .001) # Off
