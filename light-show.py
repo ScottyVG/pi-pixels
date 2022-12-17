@@ -387,35 +387,28 @@ def blue_xmas():
     fill(blue, .001)
 
 while True:
-    cycle(.001, white)
-    cycle(.001, red)
-    cycle(.001, green)
+    cycle(.0001, white)
+    cycle(.0001, red)
+    cycle(.0001, green)
     # bounce(.01, red)
     # bounce(.01, green)
     fade_green()
     fade_red()
     clear()
 
-    shooting_star(.001)
     red_green_show()
     christmas()
     green_red_show()
     christmas()
     red_green_show()
-    cycle(.001, white)
     fill_all_random(2)
-    cycle(.001, red)
-    cycle(.001, green)
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
     fill(off, .01) # Off
     fill_all_random(2)
-    cycle(.001, green)
-    cycle(.001, red)
     red_green()
     fill_all_random(2)
     fill(off, .01) # Off
     fill_random_show(.001)
-    cycle(.001, white)
     fill_all_random(2)
     rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
     fill_all_random(2)
