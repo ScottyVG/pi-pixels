@@ -287,7 +287,7 @@ def fade():
 
 # clear
 def clear():
-    for i in range(n):
+    for i in range(num_pixels):
         pixels[i] = (0, 0, 0)
     pixels.write()
 
@@ -370,8 +370,8 @@ def blue_xmas():
     fill(blue, .001)
 
 while True:
-    cycle(.01)
-    bounce(.01)
+    cycle(.001)
+    bounce(.001)
     fade()
     clear()
 
