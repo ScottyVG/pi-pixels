@@ -243,6 +243,16 @@ def fill_random_show(wait):
     # fill_random_four(wait)
     # fill(off, 0.01) # Off
 
+def shooting_star(wait):
+    for i in range(num_pixels):
+        pixels[i] = (255, 255, 255)
+        pixels.show()
+        time.sleep(wait)
+    for i in range(num_pixels):
+        pixels[i] = (0, 0, 0)
+        pixels.show()
+        time.sleep(wait)
+
 def christmas():
     red_green_run(.0001)
     fill(off, .001) # Off
@@ -320,6 +330,7 @@ def blue_xmas():
     fill(blue, .001)
 
 while True:
+    shooting_star(.001)
     red_green_show()
     christmas()
     green_red_show()
