@@ -344,58 +344,99 @@ def green_red_show():
 def blue_xmas():
     fill(blue, 5)
     fill(off, .01) # Off
+    fill(white, 5)
+    fill(off, .01) # Off
     fill(blue, 4)
+    fill(off, .01) # Off
+    fill(white, 4)
     fill(off, .01) # Off
     fill(blue, 3)
     fill(off, .01) # Off
+    fill(white, 3)
+    fill(off, .01) # Off
     fill(blue, 2)
+    fill(off, .01) # Off
+    fill(white, 2)
     fill(off, .01) # Off
     fill(blue, 1)
     fill(off, .01) # Off
+    fill(white, 1)
+    fill(off, .01) # Off
     fill(blue, .5)
+    fill(off, .01) # Off
+    fill(white, .5)
     fill(off, .01) # Off
     fill(blue, .25)
     fill(off, .01) # Off
+    fill(white, .25)
+    fill(off, .01) # Off
     fill(blue, .1)
     fill(off, .01) # Off
-    fill(blue, .01)
+    fill(white, .1)
     fill(off, .01) # Off
     fill(blue, .01)
     fill(off, .01) # Off
-    fill(blue, .01)
+    fill(white, .01)
     fill(off, .01) # Off
     fill(blue, .01)
     fill(off, .01) # Off
+    fill(white, .01)
+    fill(off, .01) # Off
+    fill(blue, .01)
+    fill(off, .01) # Off
+    fill(white, .01)
+    fill(off, .01) # Off
+    fill(blue, .01)
+    fill(off, .01) # Off
+    fill(white, .01)
+    fill(off, .01) # Off
     fill(blue, .001)
+    fill(off, .001) # Off
+    fill(white, .001)
     fill(off, .001) # Off
     fill(blue, .01)
     fill(off, .001) # Off
-    fill(blue, .001)
+    fill(white, .01)
     fill(off, .001) # Off
     fill(blue, .001)
     fill(off, .001) # Off
-    fill(blue, .001)
+    fill(white, .001)
     fill(off, .001) # Off
     fill(blue, .001)
+    fill(off, .001) # Off
+    fill(white, .001)
+    fill(off, .001) # Off
+    fill(blue, .001)
+    fill(off, .001) # Off
+    fill(white, .001)
+    fill(off, .001) # Off
+    fill(blue, .001)
+    fill(off, .001) # Off
+    fill(white, .001)
     fill(off, .001) # Off
     fill(blue, .01)
     fill(off, .001) # Off
-    fill(blue, .001)
+    fill(white, .01)
     fill(off, .001) # Off
     fill(blue, .001)
+    fill(off, .001) # Off
+    fill(white, .001)
+    fill(off, .001) # Off
+    fill(blue, .001)
+    fill(off, .001) # Off
+    fill(white, .001)
     fill(off, .001) # Off
     fill(blue, .001)
 
 while True:
     cycle(.0001, white)
-    cycle(.0001, red)
-    cycle(.0001, green)
     # bounce(.01, red)
     # bounce(.01, green)
-    fade_green()
     fade_red()
-    clear()
-
+    cycle(.0001, green)
+    fade_red()
+    fade_green()
+    cycle(.0001, red)
     red_green_show()
     christmas()
     green_red_show()
@@ -412,5 +453,4 @@ while True:
     fill_all_random(2)
     rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
     fill_all_random(2)
-    cycle(.001, white)
     blue_xmas()
