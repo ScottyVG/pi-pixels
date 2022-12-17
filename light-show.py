@@ -253,6 +253,46 @@ def shooting_star(wait):
         pixels.show()
         time.sleep(wait)
 
+# cycle
+def cycle(wait):
+    for i in range(4 * num_pixels):
+        for j in range(num_pixels):
+            pixels[j] = (0, 0, 0)
+        pixels[i % num_pixels] = (255, 255, 255)
+        pixels.write()
+        time.sleep(wait)
+
+# bounce
+def bounce(wait):
+    for i in range(4 * num_pixels):
+        for j in range(num_pixels):
+            pixels[j] = (0, 0, 128)
+        if (i // num_pixels) % 2 == 0:
+            pixels[i % num_pixels] = (0, 0, 0)
+        else:
+            pixels[num_pixels - 1 - (i % num_pixels)] = (0, 0, 0)
+        pixels.write()
+        time.sleep(wait)
+
+# fade in/out
+def fade():
+    for i in range(0, 4 * 256, 8):
+        for j in range(num_pixels):
+            if (i // 256) % 2 == 0:
+                val = i & 0xff
+            else:
+                val = 255 - (i & 0xff)
+            pixels[j] = (val, 0, 0)
+        pixels.write()
+
+# clear
+def clear():
+    for i in range(n):
+        pixels[i] = (0, 0, 0)
+    pixels.write()
+
+
+
 def christmas():
     red_green_run(.0001)
     fill(off, .001) # Off
@@ -330,6 +370,11 @@ def blue_xmas():
     fill(blue, .001)
 
 while True:
+    cycle(.01)
+    bounce(.01)
+    fade()
+    clear()
+
     shooting_star(.001)
     red_green_show()
     christmas()
