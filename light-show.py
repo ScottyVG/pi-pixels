@@ -254,19 +254,27 @@ def shooting_star(wait):
         time.sleep(wait)
 
 # cycle
-def cycle(wait):
-    for i in range(4 * num_pixels):
+def cycle(wait, color):
+    for i in range(num_pixels):
         for j in range(num_pixels):
             pixels[j] = (0, 0, 0)
-        pixels[i % num_pixels] = (255, 255, 255)
+        pixels[i % num_pixels] = color
         pixels.write()
         time.sleep(wait)
+# # cycle
+# def cycle(wait):
+#     for i in range(4 * num_pixels):
+#         for j in range(num_pixels):
+#             pixels[j] = (0, 0, 0)
+#         pixels[i % num_pixels] = (255, 255, 255)
+#         pixels.write()
+#         time.sleep(wait)
 
 # bounce
-def bounce(wait):
-    for i in range(4 * num_pixels):
+def bounce(wait, color):
+    for i in range(num_pixels):
         for j in range(num_pixels):
-            pixels[j] = (0, 0, 128)
+            pixels[j] = color
         if (i // num_pixels) % 2 == 0:
             pixels[i % num_pixels] = (0, 0, 0)
         else:
@@ -275,7 +283,7 @@ def bounce(wait):
         time.sleep(wait)
 
 # fade in/out
-def fade():
+def fade_green():
     for i in range(0, 4 * 256, 8):
         for j in range(num_pixels):
             if (i // 256) % 2 == 0:
@@ -283,6 +291,15 @@ def fade():
             else:
                 val = 255 - (i & 0xff)
             pixels[j] = (val, 0, 0)
+        pixels.write()
+def fade_red():
+    for i in range(0, 4 * 256, 8):
+        for j in range(num_pixels):
+            if (i // 256) % 2 == 0:
+                val = i & 0xff
+            else:
+                val = 255 - (i & 0xff)
+            pixels[j] = (0, val, 0)
         pixels.write()
 
 # clear
@@ -370,9 +387,14 @@ def blue_xmas():
     fill(blue, .001)
 
 while True:
-    cycle(.001)
-    bounce(.001)
-    fade()
+    cycle(.001, white)
+    cycle(.001, red)
+    cycle(.001, green)
+    cycle(.001, white)
+    bounce(.01, red)
+    bounce(.01, green)
+    fade_green()
+    fade_red()
     clear()
 
     shooting_star(.001)
