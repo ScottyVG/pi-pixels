@@ -453,4 +453,4 @@ while True:
     fill_all_random(2)
     rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
     fill_all_random(2)
-    blue_xmas()
+    # blue_xmas()
