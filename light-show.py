@@ -443,14 +443,17 @@ while True:
     christmas()
     red_green_show()
     fill_all_random(2)
+    fill(off, .01) # Off
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
     fill(off, .01) # Off
     fill_all_random(2)
+    fill(off, .01) # Off
     red_green()
     fill_all_random(2)
     fill(off, .01) # Off
     fill_random_show(.001)
     fill_all_random(2)
+    fill(off, .01) # Off
     rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
     fill_all_random(2)
     # blue_xmas()
