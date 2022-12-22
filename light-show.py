@@ -429,14 +429,14 @@ def blue_xmas():
     fill(blue, .001)
 
 while True:
-    cycle(.0001, white)
+    # cycle(.0001, white)
     # bounce(.01, red)
     # bounce(.01, green)
     fade_red()
-    cycle(.0001, green)
+    # cycle(.0001, green)
     fade_red()
     fade_green()
-    cycle(.0001, red)
+    # cycle(.0001, red)
     red_green_show()
     christmas()
     green_red_show()
