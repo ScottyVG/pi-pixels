@@ -432,27 +432,28 @@ while True:
     cycle(.0001, white)
     # bounce(.01, red)
     # bounce(.01, green)
-    fade_red()
-    cycle(.0001, green)
-    fade_red()
-    fade_green()
-    cycle(.0001, red)
-    red_green_show()
-    christmas()
-    green_red_show()
-    christmas()
-    red_green_show()
-    fill_all_random(2)
-    fill(off, .01) # Off
+    # fade_red()
+    # cycle(.0001, green)
+    # fade_red()
+    # fade_green()
+    # cycle(.0001, red)
+    # red_green_show()
+    # christmas()
+    # green_red_show()
+    # christmas()
+    # red_green_show()
+    # fill_all_random(2)
+    # fill(off, .01) # Off
     rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
-    fill(off, .01) # Off
-    fill_all_random(2)
-    fill(off, .01) # Off
-    red_green()
-    fill_all_random(2)
-    fill(off, .01) # Off
+    # fill(off, .01) # Off
+    # fill_all_random(2)
+    # fill(off, .01) # Off
+    # red_green()
+    # fill_all_random(2)
+    # fill(off, .01) # Off
     fill_random_show(.001)
-    fill_all_random(2)
-    fill(off, .01) # Off
+    # fill_all_random(2)
+    # fill(off, .01) # Off
     rainbow_two(0.001)  # rainbow cycle with 1ms delay per step
-    fill_all_random(2)
+    # fill_all_random(2)
+    # blue_xmas()
